@@ -35,7 +35,7 @@ fn main() {
                         sum += 9 * get_multiplier(index);
                     } else { // 0 or 6
                         // If contains format for 7 it's a 0
-                        let seven = raw_outputs.iter().find(|x| x.len() == 4).unwrap();
+                        let seven = raw_outputs.iter().find(|x| x.len() == 3).unwrap();
                         if str_subset(digit, seven) {
                             sum += 0 * get_multiplier(index);
                         } else { // Else, it's a 6
@@ -48,7 +48,6 @@ fn main() {
             }
         }
 
-        println!("{}", sum);
         total += sum;
     }
 
