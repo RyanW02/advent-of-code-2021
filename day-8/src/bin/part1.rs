@@ -18,7 +18,7 @@ fn get_digit(s: &str) -> Option<i32> {
         4 => Some(4),
         3 => Some(7),
         7 => Some(8),
-        _ => None
+        _ => None,
     }
 }
 
