@@ -71,13 +71,14 @@ impl Solver {
             return size;
         }
 
+        self.visited.push(start);
+
         let value = self.get_value(&start);
         if value == 9 {
             return size;
         }
 
         size += 1;
-        self.visited.push(start);
 
         // Check value to the left
         if start.0 > 0 {
